@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up - SmartStudy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-container">
+    <h2>Create Account</h2>
+
+    <form>
+        <input type="text" placeholder="Full Name" required><br><br>
+        <input type="email" placeholder="Email" required><br><br>
+        <input type="password" placeholder="Password" required><br><br>
+        <button type="submit">Sign Up</button>
+        <form onsubmit="signupUser(event)">
+    </form>
+
+<script>
+function signupUser(event) {
+    event.preventDefault();
+    alert("Account Created!");
+    window.location.href = "dashboard.html";
+}
+</script>
+
+    <p>Already have an account? <a href="login.html">Login</a></p>
+</div>
+
+</body>
+</html>
